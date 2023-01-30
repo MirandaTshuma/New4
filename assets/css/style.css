@@ -312,6 +312,73 @@ hr {
 display: block;
 text-decoration: none;
 color: white;
-margin-bottom: 10px;
+margin-bottom: 10px
 }
 
+
+
+
+
+
+
+/*ABOUT US PAGE*/
+
+.sub-header {
+    height: 80vh;
+    width: 100%;
+    background-image:  linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(../images/mnld_couple_yoga_on_pool_view_944x510.webp);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+.sub-header h1 {
+    margin-top: 10px;
+}
+.about-us {
+    width: 80%;
+    margin: auto;
+    padding-top: 150px;
+    padding-bottom: 10px;
+}
+.about-col {
+    flex-basis: 48%;
+    padding: 30px 2px;
+
+}
+.about-col img {
+    width: 75%;
+    padding-top: 50px;
+    
+    
+}
+.about-col h1 {
+    padding-top: 10px;
+    color: black;
+
+}
+.about-col p{
+    padding: 15px 0 25px;
+    font-size: 14px;
+}
+.about-btn-btn {
+    color: white;
+    font-weight: 300;
+    border-radius: 20px;
+    border: none;
+    padding: 12px 34px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    background: #760904;
+    position: relative;
+    cursor: pointer;
+    font-style: bold;
+}
+
+.about-btn-btn:hover {
+    border: 10px solid #a13d35;
+    background: #a13d35;
+    transition: 1s;
+
+}
