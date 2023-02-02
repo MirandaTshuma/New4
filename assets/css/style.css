@@ -4,6 +4,9 @@
     font-family: 'Poppins', sans-serif;
 }
 /*header content and navigation toogle*/
+h4, p {
+    color: rgb(52, 50, 50);
+}
 .header{
     min-height: 100vh;
     width: 100%;
@@ -92,30 +95,8 @@ nav .fa {
      .text-box h1 {
         font-size: 15px;
      }
-     .nav-links ul li {
-        display: block;
-     }
-     .nav-links {
-        text-align: left;
-        height: 100vh;
-        width: 200px;
-        top: 0;
-        right: -200px;
-        position: absolute;
-        background: #800900;
-        z-index: 2;
-     }
-     nav .fa {
-      display: block;  
-      color: white;
-      cursor: pointer;
-      margin: 10px;
-      font-size: 18px;
-     }
-     .nav-links ul {
-        padding: 20px;
-
-     }
+     
+    
 }
 /*link for menu to be hidden and found by smaller screens*/
 
@@ -124,9 +105,12 @@ nav .fa {
     margin: auto;
     text-align: center;
     width: 80%;
-    padding-top: 100px;
+    padding-top: 150px;
 }
-h1{
+.about-us {
+    padding-top: 10px;
+}
+.about h1{
     font-size: 30px;
     font-size: 600;
 }
@@ -170,65 +154,35 @@ h3 {
         flex-direction: column;
     }
 }
-/*classes*/
-.classes {
-    margin: auto;
+.diet {
     text-align: center;
-    width: 80%;
-    padding-top: 50px;
+    font-size: 15px;
+    line-height: 40px;
+    color: rgb(49, 48, 48);
+    text-shadow: 0 5px 10px rgba(236, 234, 234, 0.3);
 }
-h1{
-    font-size: 30px;
-    font-size: 600;
+.diet h1 {
+
 }
-p {
-    padding: 10px;
-    color: black;
-    font-size: 18px;
-    line-height: 20px;
-    font-weight: 300;
-}
+/*grid for class schedule*/
+/*classes*/
 .class-btn {
-    color: white;
-    font-weight: 300;
-    border-radius: 20px;
-    border: none;
+    color: #fff;
+    border: 2px solid #800900;
     padding: 12px 34px;
     text-decoration: none;
     display: inline-block;
-    font-size: 13px;
-    background: #760904;
+    font-size: 12px;
+    background: transparent;
     position: relative;
     cursor: pointer;
-    font-style: bold;
+    background: #760904;
+    border-radius: 20px;
 }
-
 .class-btn:hover {
-    border: 10px solid #a13d35;
-    background: #a13d35;
+    border: 2px solid #800900;
+    background: #800900;
     transition: 1s;
-}
-#class-image {
-    background-image: url('../images/backg.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    overflow: hidden;
-
-}
-
-#class-image div {
-    color: #fafafa;
-    background-color: rgba(0,0,0,0.6,);
-    width: 20%;
-    height: 200px;
-    float: left;
-    padding: 30px 0 0 10px;
-    text-align: center;
-    border: 2px solid white;
-    box-sizing: border-box;
-    outline: none;
 }
 /*sign up*/
 .sign-up-form {
@@ -338,6 +292,7 @@ hr {
 .about-col p{
     padding: 15px 0 25px;
     font-size: 14px;
+    line-height: 29px;
 }
 .about-btn-btn {
     color: white;
@@ -351,12 +306,212 @@ hr {
     background: #760904;
     position: relative;
     cursor: pointer;
+    border-radius: 20px;
     font-style: bold;
 }
 
 .about-btn-btn:hover {
-    border: 10px solid #a13d35;
+    border: 10px #a13d35;
     background: #a13d35;
     transition: 1s;
 
 }
+
+/*our teams*/
+.wrapper {
+    margin-top: 10px;
+    background-color: #f7e5e5;
+}
+.wrapper h1, h3 {
+    padding-top: 20px;
+    color: black;
+    
+}
+.team {
+    display: flex;
+    text-align: center;
+    width: auto;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+
+/*footer*/
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer h4 {
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.footer p {
+    font-size: 10px;
+}
+.footer-icons .fa {
+    color: #760904;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px;
+}
+
+/*programmes*/
+.programmes {
+    padding: 10px;
+    color: #6e6d6d;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+
+}
+
+/*contact page*/
+.contact-sec {
+    background: url(../images/pexels-thirdman-6957967.jpg); /*licence free*/
+    background-size: cover;
+    padding: 30px 0;
+}
+.border {
+    height: 10px;
+    width: 100px;
+    background: white;
+    margin: 40px auto;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+}
+.contact-text {
+    display: block;
+    padding: 18px 80px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 16px 0;
+    border: 0;
+    /*can put background to #fff*/
+}
+textarea.contact-text {
+    height: 120px;
+    border: 0;
+}
+.contact-btn {
+    float: left;
+    border: 0;
+    padding: 15px 25px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.contact-btn:hover {
+    border: 10px #a13d35;
+    background: #a13d35;
+    transition: 0.5s;
+}
+
+
+.connect-with h1{
+    text-align: center;
+    margin: auto;
+    width: 80%;
+    padding-top: 70px;
+    
+    
+}
+
+.connect-with p {
+    text-align: center;
+    margin: auto;
+    width: 80%;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    line-height: 40px;
+    font-size: 15px;
+}
+/*about us*/
+.team-container {
+    margin: 20px 20px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    
+   
+  }
+.team-profiles {
+    display: flex;
+    justify-content: space-around;
+ 
+}
+.profile-for-team {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 50px 50px;
+    text-align: center;
+    font-size: 20px;
+    
+    flex-direction: column;
+    align-items: center;
+  }
+  .profile-for-team .profile-img {
+    height: 260px;
+    width: 260px;
+    border-radius: 50%;
+    
+  }
+  .profile-for-team h5, h3{
+    font-size: 14px;
+    font-weight: 100;
+    letter-spacing: 3px;
+    color: rgb(49, 48, 48);
+  }
+  .user-name {
+    margin-top: 30px;
+    font-size: 30px;
+  }
+  .profile-for-team p {
+    font-size: 14px;
+    margin-top: 20px;
+    text-align: justify;
+    line-height: 25px;
+  }
+  @media only screen and (max-width: 1150px) {
+    .profiles {
+      flex-direction: column;
+    }
+  }
+  /*classes page information*/
+  .classes-container {
+    padding: 15px 9%;
+    padding-bottom: 100px;
+  }
+  .classes-container {
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 60px;
+    text-shadow: 0 5px 10px rgb(0,0,0,0.3);
+    background: #f8d6d3;
+
+  }
+  .classes-container .classes-box-container {
+    display: grid;
+    grid-template-columns: repeat;
+    gap: 15px;
+  }
+  .classes-container .classes-box-container .box {
+    box-shadow: 0 5px 10px rgba(0,0,0.3);
+    padding: 30px 20px;
+    background: #d48680;
+    text-align: center;
+    border-radius: 5px solid;
+  }
+  .classes-container .classes-box-container .box h3 {
+    padding: 10px 0;
+    
+  }
+  .classes-container p {
+        padding-bottom: 25px
+  }
+  
